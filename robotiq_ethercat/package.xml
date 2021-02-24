@@ -9,7 +9,7 @@
   </description>
 
   <author>Jonathan Meyer</author>
-  <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+  <maintainer email="ros@robotiq.com">Jean-Philippe Roberge</maintainer>
   <license>BSD</license>
 
   <buildtool_depend>catkin</buildtool_depend>

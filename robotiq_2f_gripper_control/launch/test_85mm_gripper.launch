@@ -32,5 +32,7 @@
         <rosparam param="use_gui">false</rosparam>
     </node>
 
+<!--
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robotiq_2f_85_gripper_visualization)/visualize.rviz" required="true" />
+-->
 </launch>

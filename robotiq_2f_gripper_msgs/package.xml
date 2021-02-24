@@ -3,7 +3,7 @@
     <version>0.0.2</version>
     <description>Messages for Robotiq 2 Finger Adaptive Gripper Model (Also known as C series) Driver</description>
     
-    <maintainer email="civerachb@clearpathrobotics.com">Chris Iverach-Brereton</maintainer>
+    <maintainer email="daniels.ordonez@gmail.com">Daniel Ordonez</maintainer>
     <author email="dev@stanleyinnovation.com">Stanley Innovation, Inc.</author>
     <author email="daniels.ordonez@gmail.com">Daniel Ordonez</author>
     <license>BSD</license>
