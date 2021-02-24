@@ -1,5 +1,17 @@
 # Robotiq
 
+This repo is a merger of the Danfoa Robotiq driver and the ROS-Industrial driver.  Gripper control is provided by
+Danfoa, as we found it was better-documented and did what we wanted more reliably.  Force-torque sensor support is
+from ROS-Industrial, as these were never supported by the Danfoa driver.
+
+It appears that Robotiq themselves no longer support the ROS-Industrial package, hence the need for this fork.
+See: https://github.com/ros-industrial/robotiq/issues/185#issuecomment-784918238
+
+The contents of this README have not been properly-curated yet, so please forgive any missing/incorrect information.
+
+For practical purposes, this package should work on Kinetic & Melodic.  We have no plans to maintain it for older ROS
+distributions at this time.
+
 ## ROS Distro Support
 
 |         | Indigo | Jade | Kinetic | Melodic |
@@ -20,7 +32,7 @@ Status: [![Build Status](https://travis-ci.com/ros-industrial/robotiq.svg?branch
 
 [![support level: community](https://img.shields.io/badge/support%20level-community-lightgray.png)](http://rosindustrial.org/news/2016/10/7/better-supporting-a-growing-ros-industrial-software-platform)
 
-[ROS-Industrial][] robotiq meta-package.  See the [ROS wiki][] page for more information. 
+[ROS-Industrial][] robotiq meta-package.  See the [ROS wiki][] page for more information.
 
 ## License
 
@@ -34,4 +46,3 @@ This repo holds source code for all versions > groovy. For those versions <= gro
 [ROS-Industrial]: http://www.ros.org/wiki/Industrial
 [ROS wiki]: http://ros.org/wiki/robotiq
 [SVN repo]: https://code.google.com/p/swri-ros-pkg/source/browse
-
