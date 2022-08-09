@@ -101,6 +101,10 @@ class communication:
       #   print("Failed to receive status")
         return None
 
+      if response.isError():
+        print(response)
+        return None
+
       #Instantiate output as an empty list
       output = []
 
