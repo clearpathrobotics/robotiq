@@ -16,11 +16,6 @@ find_package(catkin REQUIRED
     robotiq_2f_gripper_msgs
 )
 
-## System dependencies are found with CMake's conventions
-# find_package(Boost REQUIRED COMPONENTS system)
-
-catkin_python_setup()
-
 ###################################
 ## catkin specific configuration ##
 ###################################
@@ -30,13 +25,14 @@ catkin_python_setup()
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-
 catkin_package(
   INCLUDE_DIRS include  
 #  LIBRARIES robotiq_2f_gripper_control
    CATKIN_DEPENDS std_msgs robotiq_2f_gripper_msgs
 #  DEPENDS system_lib
 )
+
+catkin_python_setup()
 
 ###########
 ## Build ##
@@ -60,9 +56,9 @@ include_directories(
 #############
 
 catkin_install_python(PROGRAMS 
-      scripts/robotiq_2f_action_server.py
-      scripts/robotiq_2f_action_client_example.py
-                      DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+                        scripts/robotiq_2f_action_server.py
+                        scripts/robotiq_2f_action_client_example.py
+                        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 ## Mark executables and/or libraries for installation
 # install(TARGETS ${PROJECT_NAME} ${PROJECT_NAME}_node
@@ -77,3 +73,6 @@ install(DIRECTORY include/${PROJECT_NAME}/
   FILES_MATCHING PATTERN "*.h"
   PATTERN ".svn" EXCLUDE
 )
+
+install(DIRECTORY launch
+        DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
