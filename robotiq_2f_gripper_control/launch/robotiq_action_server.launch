@@ -1,4 +1,5 @@
 <launch>
+    <arg name="name"        default="robotiq_2f_action_server" doc="Node name"/>
     <arg name="delay"       default="0"             doc="Seconds to wait before launching node. Useful to wait for socat realys to establish when using UR e-series."/>
     <arg name="comport"     default="/dev/ttyUSB0"  doc="Communication port of gripper, use `dmesg | grep tty` command to list ports"/>
     <arg name="baud"        default="115200"/>
@@ -11,7 +12,7 @@
     <!-- Robotiq 2finger_gripper action Server -->
 
     <node pkg="robotiq_2f_gripper_control" type="robotiq_2f_action_server.py"
-        name="robotiq_2f_action_server" respawn="false" output="screen"
+        name="$(arg name)" respawn="false" output="screen"
         launch-prefix="bash -c 'sleep $(arg delay); $0 $@'">
         <param name="comport"    value="$(arg comport)" />
         <param name="baud"       value="$(arg baud)" />
