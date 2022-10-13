@@ -16,7 +16,7 @@ distributions at this time.
 
 |         | Indigo | Jade | Kinetic | Melodic | Noetic |
 |:-------:|:------:|:----:|:-------:|:-------:|:------:|
-| Branch  | [`indigo-devel`](https://github.com/ros-industrial/robotiq/tree/indigo-devel) | [`jade-devel`](https://github.com/ros-industrial/robotiq/tree/jade-devel) | [`kinetic-devel`](https://github.com/ros-industrial/robotiq/tree/kinetic-devel) | [`kinetic-devel`](https://github.com/ros-industrial/robotiq/tree/kinetic-devel) |) | ['noetic-devel'](https://github.com/ros-industrial/robotiq/tree/noetic-devel) |
+| Branch  | [`indigo-devel`](https://github.com/ros-industrial/robotiq/tree/indigo-devel) | [`jade-devel`](https://github.com/ros-industrial/robotiq/tree/jade-devel) | [`kinetic-devel`](https://github.com/ros-industrial/robotiq/tree/kinetic-devel) | [`kinetic-devel`](https://github.com/ros-industrial/robotiq/tree/kinetic-devel) |) | [`noetic-devel`](https://github.com/clearpathrobotics/robotiq/tree/noetic-devel)|
 | Status  |  supported | not supported |  supported |  supported |  supported  |
 | Version | [version](http://repositories.ros.org/status_page/ros_indigo_default.html?q=robotiq) | [version](http://repositories.ros.org/status_page/ros_jade_default.html?q=robotiq) | [version](http://repositories.ros.org/status_page/ros_kinetic_default.html?q=robotiq) | [version](http://repositories.ros.org/status_page/ros_melodic_default.html?q=robotiq) | [version](http://repositories.ros.org/status_page/ros_noetic_default.html?q=robotiq) |
 
